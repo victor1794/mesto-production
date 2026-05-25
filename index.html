@@ -150,5 +150,36 @@
     </div>
 
     <!-- ВАЖНО: относительный путь -->
+    <!-- Popup статистики -->
+<div class="popup popup_type_info">
+  <div class="popup__content popup__content_type_info">
+    <button type="button" class="popup__close"></button>
+
+    <h3 class="popup__title">Статистика</h3>
+
+    <div class="popup__info-list"></div>
+
+    <ul class="popup__users-list"></ul>
+  </div>
+</div>
+
+<!-- Template для строки статистики -->
+<template id="popup-info-definition-template">
+  <div class="popup__info-item">
+    <span class="popup__info-term"></span>
+    <span class="popup__info-definition"></span>
+  </div>
+</template>
+
+<!-- Template для пользователя -->
+<template id="popup-info-user-preview-template">
+  <li class="popup__user-preview">
+    <img class="popup__user-preview-avatar" />
+    <div class="popup__user-preview-info">
+      <p class="popup__user-preview-name"></p>
+      <p class="popup__user-preview-count"></p>
+    </div>
+  </li>
+</template>
   </body>
 </html>
